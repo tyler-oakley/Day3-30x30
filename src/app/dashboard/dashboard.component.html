@@ -1,3 +1,5 @@
 <h1>Your Dashboard</h1>
-<app-list [entries]="listOfEntries" (onDelete)="delete($event)" (onSelect)="entrySelected($event)"></app-list>
-<app-detail [selectedEntry]="selectedEntry" (onSave)="save($event)" (onClear)="clear()"></app-detail>
+<div class="container">
+    <app-list [entries]="listOfEntries" (onDelete)="delete($event)" (onSelect)="entrySelected($event)"></app-list>
+    <app-detail [selectedEntry]="selectedEntry" (onSave)="save($event)" (onClear)="clear()"></app-detail>
+</div>

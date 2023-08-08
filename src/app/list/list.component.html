@@ -1,8 +1,10 @@
-<h3>Timesheet</h3>
-<p>Click on an entry to edit</p>
-<ul>
-    <li *ngFor="let entry of entries">
-        <button (click)="onSelect.emit(entry)">{{ entry.content }}</button>
-        <button class="delete" (click)="onDelete.emit(entry)">X</button>
-    </li>
-</ul>
+<div class="container">
+    <h3>Timesheet</h3>
+    <p>Click on an entry to edit</p>
+    <ul>
+        <li *ngFor="let entry of entries">
+            <button class='entry' (click)="onSelect.emit(entry)">{{ entry.content }}</button>
+            <button class="delete" (click)="onDelete.emit(entry)">X</button>
+        </li>
+    </ul>
+</div>

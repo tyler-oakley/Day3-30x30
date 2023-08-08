@@ -1,0 +1,7 @@
+<div class="container">
+    <h2>Info</h2>
+    <input #saveBox [(ngModel)]="selectedEntry.content" placeholder="Add or edit entry here">
+    <button (click)="onSave.emit(saveBox.value)">Save</button>
+    <br>
+    <button (click)="onClear.emit()">Clear</button>
+</div>
